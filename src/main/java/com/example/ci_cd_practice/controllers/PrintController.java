@@ -1,7 +1,7 @@
 package com.example.ci_cd_practice.controllers;
 
 import com.example.ci_cd_practice.services.PrintService;
-import lombok.RequiredArgsConstructor;
+import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping
-@RequiredArgsConstructor
+@AllArgsConstructor
 public class PrintController {
     private PrintService printService;
     @GetMapping("/print")
