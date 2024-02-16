@@ -1,7 +1,7 @@
 version: '3'
 services:
   app:
-    image: kanghyeonsoo/ci_cd:latest
+    image: ${DOCKER_USERNAME}/ci_cd:latest
     ports:
       - "8080:8080"
     depends_on:
